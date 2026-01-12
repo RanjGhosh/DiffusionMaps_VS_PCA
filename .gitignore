@@ -1,7 +1,8 @@
 .DS_Store
 .ipynb_checkpoints/
 __pycache__/
-*.png
-*.pdf
-*.npz
 .vscode/
+# *.png
+# *.pdf
+# *.npz
+
