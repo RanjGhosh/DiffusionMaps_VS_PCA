@@ -1,27 +1,26 @@
-This project compares Diffusion Maps and Principal Component Analysis (PCA) as dimensionality reduction techniques on both synthetic manifolds and real-world data. Using Swiss Roll and S-Curve datasets, the code demonstrates how nonlinear structure can be recovered by Diffusion Maps—especially with a kNN kernel—while PCA struggles with curved manifolds.
+# DiffusionMaps_VS_PCA  
+*Manifold Learning on Curved Data*
 
-The pipeline then extends to the Breast Cancer Wisconsin dataset, evaluating how PCA, full-kernel Diffusion Maps, and kNN Diffusion Maps affect downstream classification using a kNN classifier. The project visualizes embeddings, confusion matrices, eigenvalue spectra, runtime, and cross-validation accuracy.
+This project compares **Diffusion Maps** and **PCA** on nonlinear manifolds and real data. Using Swiss Roll, S-Curve, and the Breast Cancer Wisconsin dataset, it shows how geometry-aware embeddings outperform linear methods in both visualization and classification.
 
-Key Features
+---
 
-Synthetic manifold generation (Swiss Roll, S-Curve)
+## What’s Inside
 
-Full Gaussian and kNN-based Diffusion Maps
+- Swiss Roll and S-Curve manifold generation  
+- Full-kernel and kNN Diffusion Maps  
+- PCA baseline  
+- 2D embedding visualizations  
+- kNN classification on embeddings  
+- Confusion matrices, accuracy, and runtime comparisons  
+- Breast cancer case study  
+- Eigenvalue spectrum and diffusion coordinates (ψ)
 
-PCA baselines
+---
 
-2D embedding visualizations
+## Why It Matters
 
-kNN classification on embeddings
+PCA is linear and struggles with curved structure.  
+Diffusion Maps preserve intrinsic geometry, producing cleaner embeddings and better downstream performance.
 
-Confusion matrices, accuracy, and timing comparisons
-
-Application to real biomedical data (Breast Cancer dataset)
-
-Eigenvalue spectrum and diffusion coordinates (ψ) analysis
-
-Goal
-
-To show how geometry-aware, nonlinear embeddings outperform linear methods like PCA on curved data, and how this translates into improved classification performance on real datasets.
-
-This repository serves as a compact, end-to-end study of manifold learning for both visualization and machine learning.
+This repo demonstrates how nonlinear embeddings improve both insight and model accuracy.
